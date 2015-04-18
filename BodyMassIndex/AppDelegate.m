@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    CGFloat height = 71.0;
+    CGFloat weight = 185.0;
+    
+    CGFloat bodyMassIndex = (weight / (height * weight)) * 703;
+    
+    NSLog(@"BMI is %f.", bodyMassIndex);
     return YES;
 }
 
